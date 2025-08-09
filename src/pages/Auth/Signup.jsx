@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 import SignupForm from '../../components/Auth/SignupForm'
 import { toast } from 'react-toastify'
+import MarketingNavbar from '../../components/MarketingNavbar'
 
 const Signup = () => {
   const { register } = useAuth()
@@ -31,6 +32,7 @@ const Signup = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <MarketingNavbar />
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
           Create a new account

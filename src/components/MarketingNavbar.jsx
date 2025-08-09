@@ -9,7 +9,7 @@ const MarketingNavbar = () => {
   // If user is logged in, show dashboard navbar
   if (user) {
     return (
-      <header className="bg-white shadow-sm">
+      <header className="bg-gray-900 shadow-sm">
         <div className="px-6 py-4 flex justify-between items-center">
           <h2 className="text-xl font-semibold text-gray-800">
             {user.role === 'student' ? 'Student Dashboard' : 'Staff Dashboard'}
@@ -29,7 +29,7 @@ const MarketingNavbar = () => {
 
   // Marketing navbar for non-authenticated users
   return (
-    <div className="bg-white">
+    <div className="bg-gray-800 text-white">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
