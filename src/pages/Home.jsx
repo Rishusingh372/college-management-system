@@ -7,9 +7,10 @@ const Home = () => {
 
   return (
     <>
+      <MarketingNavbar />
       {/* Hero Section with Background Image */}
       <div className="relative min-h-screen">
-        <MarketingNavbar />
+        
         <div 
           className="absolute inset-0 bg-gray-900 opacity-50"
           style={{
